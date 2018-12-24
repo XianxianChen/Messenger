@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		81127C5321C8A95F00F8336E /* FriendControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C5221C8A95F00F8336E /* FriendControllerHelper.swift */; };
 		81F688CE21C6B4B7009CBDB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F688CD21C6B4B7009CBDB7 /* AppDelegate.swift */; };
 		81F688D021C6B4B7009CBDB7 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F688CF21C6B4B7009CBDB7 /* FriendController.swift */; };
 		81F688D621C6B4B7009CBDB7 /* messenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81F688D421C6B4B7009CBDB7 /* messenger.xcdatamodeld */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		81127C5221C8A95F00F8336E /* FriendControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendControllerHelper.swift; sourceTree = "<group>"; };
 		81F688CA21C6B4B7009CBDB7 /* messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F688CD21C6B4B7009CBDB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F688CF21C6B4B7009CBDB7 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 			children = (
 				81F688CD21C6B4B7009CBDB7 /* AppDelegate.swift */,
 				81F688CF21C6B4B7009CBDB7 /* FriendController.swift */,
+				81127C5221C8A95F00F8336E /* FriendControllerHelper.swift */,
 				81F688D721C6B4BA009CBDB7 /* Assets.xcassets */,
 				81F688D921C6B4BA009CBDB7 /* LaunchScreen.storyboard */,
 				81F688DC21C6B4BA009CBDB7 /* Info.plist */,
@@ -258,6 +261,7 @@
 				81F688D021C6B4B7009CBDB7 /* FriendController.swift in Sources */,
 				81F688CE21C6B4B7009CBDB7 /* AppDelegate.swift in Sources */,
 				81F688D621C6B4B7009CBDB7 /* messenger.xcdatamodeld in Sources */,
+				81127C5321C8A95F00F8336E /* FriendControllerHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
