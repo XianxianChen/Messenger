@@ -13,17 +13,17 @@ class FriendController: UICollectionViewController {
 private let cellId = "cellId"
     var messages: [Message]?
     
-    
-
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        self.navigationController?.title = "Recent"
+        navigationItem.title = "Recent"
         collectionView.backgroundColor = .white
         collectionView.alwaysBounceVertical = true
         collectionView?.register(MessageCell.self, forCellWithReuseIdentifier: cellId)
         
         setupData()
+        
+     
         
     }
     
@@ -40,19 +40,37 @@ private let cellId = "cellId"
         }
         return cell
     }
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let layout = UICollectionViewFlowLayout()
+        let chatLogController = ChatLogController.init(collectionViewLayout: layout )
+        chatLogController.friend = messages?[indexPath.row].friend
+       // present(chatLogController, animated: true, completion: nil)
+        navigationController?.pushViewController(chatLogController, animated: true)
+    }
   
 
 }
 extension FriendController:  UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: view.frame.width, height: 200)
+        return CGSize(width: view.frame.width, height: 100)
     }
     
     
     
 }
 class MessageCell: BaseCell{
+    override var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? UIColor(displayP3Red: 0, green: 134/255, blue: 249/255, alpha: 1) : UIColor.white
+            nameLabel.textColor = isHighlighted ? UIColor.white : UIColor.black
+            msgLabel.textColor = isHighlighted ? UIColor.white : UIColor.black
+            timeLabel.textColor = isHighlighted ? UIColor.white : UIColor.black
+            
+            print(isHighlighted)
+        }
+    }
+    
     var message: Message? {
         didSet {
             nameLabel.text = message?.friend?.name
@@ -63,6 +81,14 @@ class MessageCell: BaseCell{
                 if let date = message?.date {
             let dateFormatter = DateFormatter()
                     dateFormatter.dateFormat = "h:mm a"
+                    let elapsedTimeInSeconds = NSDate().timeIntervalSince(date as Date)
+                    let secondInDays = 60 * 60 * 24
+                    // if 24 hours ago
+                   if Int(elapsedTimeInSeconds) > secondInDays * 7 {
+                        dateFormatter.dateFormat = "MM/dd/yy"
+                    } else if Int(elapsedTimeInSeconds) >  secondInDays {
+                        dateFormatter.dateFormat = "EEE"
+                    }
                     timeLabel.text = dateFormatter.string(from: date as Date)
             }
         }
@@ -124,6 +150,7 @@ class MessageCell: BaseCell{
     
     // The Visual Format Language:
     //lets you use ASCII-art like strings to define your constraints. This provides a visually descriptive representation of the constraints.
+    
     addConstraintsWithFormat(format: "H:|-12-[v0(68)]", views: profileImageView)
     addConstraintsWithFormat(format: "V:[v0(68)]", views: profileImageView)
    // addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|-12-[v0(68)]-|", options: NSLayoutConstraint.FormatOptions(), metrics: nil, views: ["v0":profileImageView]))
@@ -165,6 +192,7 @@ class MessageCell: BaseCell{
         containerView.addConstraintsWithFormat(format: "V:|[v0(24)]", views: timeLabel)
         containerView.addConstraintsWithFormat(format: "V:[v0(20)]|", views: hasReadImageView)
         
+        
     }
 }
 
@@ -189,6 +217,6 @@ class BaseCell: UICollectionViewCell {
         fatalError("init(coder) has not been implemented")
     }
     func setupViews() {
-        backgroundColor = .blue
+       // backgroundColor = .blue
     }
 }

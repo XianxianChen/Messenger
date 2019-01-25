@@ -19,10 +19,13 @@ import CoreData
         // Override point for customization after application launch.
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        
-        let layout = UICollectionViewFlowLayout()
-        let friendCV = FriendController.init(collectionViewLayout: layout)
-        window?.rootViewController = UINavigationController(rootViewController: friendCV)
+   
+//        let layout = UICollectionViewFlowLayout()
+//        let friendCV = FriendController.init(collectionViewLayout: layout)
+//        let narC = UINavigationController(rootViewController: friendCV)
+//        tabBarController.viewControllers = [narC]
+        let tabBarController = CustomTabBarController()
+        window?.rootViewController = tabBarController
         return true
     }
 

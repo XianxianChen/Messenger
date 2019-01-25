@@ -8,14 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		81127C5321C8A95F00F8336E /* FriendControllerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C5221C8A95F00F8336E /* FriendControllerHelper.swift */; };
-		81127C8021D2F6ED00F8336E /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C7E21D2F6ED00F8336E /* Friend+CoreDataClass.swift */; };
-		81127C8121D2F6ED00F8336E /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C7F21D2F6ED00F8336E /* Friend+CoreDataProperties.swift */; };
 		81127C8421D2F70100F8336E /* Message+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C8221D2F70100F8336E /* Message+CoreDataClass.swift */; };
 		81127C8521D2F70100F8336E /* Message+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C8321D2F70100F8336E /* Message+CoreDataProperties.swift */; };
+		81127C8721D5C9FA00F8336E /* chatLogController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C8621D5C9FA00F8336E /* chatLogController.swift */; };
+		81127C8A21D712B600F8336E /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C8821D712B600F8336E /* Friend+CoreDataClass.swift */; };
+		81127C8B21D712B600F8336E /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C8921D712B600F8336E /* Friend+CoreDataProperties.swift */; };
+		81127C8D21D718F000F8336E /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81127C8C21D718F000F8336E /* CustomTabBarController.swift */; };
+		81127C8F21DB377E00F8336E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81127C8E21DB377E00F8336E /* Assets.xcassets */; };
 		81F688CE21C6B4B7009CBDB7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F688CD21C6B4B7009CBDB7 /* AppDelegate.swift */; };
 		81F688D021C6B4B7009CBDB7 /* FriendController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F688CF21C6B4B7009CBDB7 /* FriendController.swift */; };
 		81F688D621C6B4B7009CBDB7 /* messenger.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 81F688D421C6B4B7009CBDB7 /* messenger.xcdatamodeld */; };
-		81F688D821C6B4BA009CBDB7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 81F688D721C6B4BA009CBDB7 /* Assets.xcassets */; };
 		81F688DB21C6B4BA009CBDB7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81F688D921C6B4BA009CBDB7 /* LaunchScreen.storyboard */; };
 		81F688E621C6B4BA009CBDB7 /* messengerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F688E521C6B4BA009CBDB7 /* messengerTests.swift */; };
 		81F688F121C6B4BA009CBDB7 /* messengerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81F688F021C6B4BA009CBDB7 /* messengerUITests.swift */; };
@@ -40,15 +42,17 @@
 
 /* Begin PBXFileReference section */
 		81127C5221C8A95F00F8336E /* FriendControllerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendControllerHelper.swift; sourceTree = "<group>"; };
-		81127C7E21D2F6ED00F8336E /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Friend+CoreDataClass.swift"; path = "messenger/Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
-		81127C7F21D2F6ED00F8336E /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Friend+CoreDataProperties.swift"; path = "messenger/Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		81127C8221D2F70100F8336E /* Message+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Message+CoreDataClass.swift"; path = "messenger/Message+CoreDataClass.swift"; sourceTree = "<group>"; };
 		81127C8321D2F70100F8336E /* Message+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Message+CoreDataProperties.swift"; path = "messenger/Message+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		81127C8621D5C9FA00F8336E /* chatLogController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chatLogController.swift; sourceTree = "<group>"; };
+		81127C8821D712B600F8336E /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Friend+CoreDataClass.swift"; path = "messenger/Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		81127C8921D712B600F8336E /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "Friend+CoreDataProperties.swift"; path = "messenger/Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		81127C8C21D718F000F8336E /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
+		81127C8E21DB377E00F8336E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81F688CA21C6B4B7009CBDB7 /* messenger.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = messenger.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81F688CD21C6B4B7009CBDB7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81F688CF21C6B4B7009CBDB7 /* FriendController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendController.swift; sourceTree = "<group>"; };
 		81F688D521C6B4B7009CBDB7 /* messenger.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = messenger.xcdatamodel; sourceTree = "<group>"; };
-		81F688D721C6B4BA009CBDB7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81F688DA21C6B4BA009CBDB7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81F688DC21C6B4BA009CBDB7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		81F688E121C6B4BA009CBDB7 /* messengerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = messengerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -87,10 +91,10 @@
 		81F688C121C6B4B7009CBDB7 = {
 			isa = PBXGroup;
 			children = (
+				81127C8821D712B600F8336E /* Friend+CoreDataClass.swift */,
+				81127C8921D712B600F8336E /* Friend+CoreDataProperties.swift */,
 				81127C8221D2F70100F8336E /* Message+CoreDataClass.swift */,
 				81127C8321D2F70100F8336E /* Message+CoreDataProperties.swift */,
-				81127C7E21D2F6ED00F8336E /* Friend+CoreDataClass.swift */,
-				81127C7F21D2F6ED00F8336E /* Friend+CoreDataProperties.swift */,
 				81F688CC21C6B4B7009CBDB7 /* messenger */,
 				81F688E421C6B4BA009CBDB7 /* messengerTests */,
 				81F688EF21C6B4BA009CBDB7 /* messengerUITests */,
@@ -112,10 +116,12 @@
 			isa = PBXGroup;
 			children = (
 				81F688CD21C6B4B7009CBDB7 /* AppDelegate.swift */,
+				81127C8C21D718F000F8336E /* CustomTabBarController.swift */,
 				81F688CF21C6B4B7009CBDB7 /* FriendController.swift */,
 				81127C5221C8A95F00F8336E /* FriendControllerHelper.swift */,
-				81F688D721C6B4BA009CBDB7 /* Assets.xcassets */,
+				81127C8621D5C9FA00F8336E /* chatLogController.swift */,
 				81F688D921C6B4BA009CBDB7 /* LaunchScreen.storyboard */,
+				81127C8E21DB377E00F8336E /* Assets.xcassets */,
 				81F688DC21C6B4BA009CBDB7 /* Info.plist */,
 				81F688D421C6B4B7009CBDB7 /* messenger.xcdatamodeld */,
 			);
@@ -244,8 +250,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				81127C8F21DB377E00F8336E /* Assets.xcassets in Resources */,
 				81F688DB21C6B4BA009CBDB7 /* LaunchScreen.storyboard in Resources */,
-				81F688D821C6B4BA009CBDB7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,11 +277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				81F688D021C6B4B7009CBDB7 /* FriendController.swift in Sources */,
-				81127C8021D2F6ED00F8336E /* Friend+CoreDataClass.swift in Sources */,
+				81127C8A21D712B600F8336E /* Friend+CoreDataClass.swift in Sources */,
+				81127C8D21D718F000F8336E /* CustomTabBarController.swift in Sources */,
+				81127C8B21D712B600F8336E /* Friend+CoreDataProperties.swift in Sources */,
+				81127C8721D5C9FA00F8336E /* chatLogController.swift in Sources */,
 				81F688CE21C6B4B7009CBDB7 /* AppDelegate.swift in Sources */,
 				81F688D621C6B4B7009CBDB7 /* messenger.xcdatamodeld in Sources */,
 				81127C5321C8A95F00F8336E /* FriendControllerHelper.swift in Sources */,
-				81127C8121D2F6ED00F8336E /* Friend+CoreDataProperties.swift in Sources */,
 				81127C8521D2F70100F8336E /* Message+CoreDataProperties.swift in Sources */,
 				81127C8421D2F70100F8336E /* Message+CoreDataClass.swift in Sources */,
 			);

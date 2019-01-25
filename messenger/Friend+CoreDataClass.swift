@@ -2,7 +2,7 @@
 //  Friend+CoreDataClass.swift
 //  messenger
 //
-//  Created by C4Q on 12/25/18.
+//  Created by C4Q on 12/28/18.
 //  Copyright © 2018 C4Q. All rights reserved.
 //
 //

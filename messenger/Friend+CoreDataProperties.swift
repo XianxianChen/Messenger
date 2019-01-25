@@ -2,7 +2,7 @@
 //  Friend+CoreDataProperties.swift
 //  messenger
 //
-//  Created by C4Q on 12/25/18.
+//  Created by C4Q on 12/28/18.
 //  Copyright © 2018 C4Q. All rights reserved.
 //
 //
@@ -19,23 +19,23 @@ extension Friend {
 
     @NSManaged public var name: String?
     @NSManaged public var profileImageName: String?
-    @NSManaged public var messages: Message?
+    @NSManaged public var messages: NSSet?
 
 }
 
-// MARK: Generated accessors for relationship
+// MARK: Generated accessors for messages
 extension Friend {
 
-    @objc(addRelationshipObject:)
-    @NSManaged public func addToRelationship(_ value: Message)
+    @objc(addMessagesObject:)
+    @NSManaged public func addToMessages(_ value: Message)
 
-    @objc(removeRelationshipObject:)
-    @NSManaged public func removeFromRelationship(_ value: Message)
+    @objc(removeMessagesObject:)
+    @NSManaged public func removeFromMessages(_ value: Message)
 
-    @objc(addRelationship:)
-    @NSManaged public func addToRelationship(_ values: NSSet)
+    @objc(addMessages:)
+    @NSManaged public func addToMessages(_ values: NSSet)
 
-    @objc(removeRelationship:)
-    @NSManaged public func removeFromRelationship(_ values: NSSet)
+    @objc(removeMessages:)
+    @NSManaged public func removeFromMessages(_ values: NSSet)
 
 }

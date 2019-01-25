@@ -2,7 +2,7 @@
 //  Message+CoreDataProperties.swift
 //  messenger
 //
-//  Created by C4Q on 12/25/18.
+//  Created by C4Q on 12/31/18.
 //  Copyright © 2018 C4Q. All rights reserved.
 //
 //
@@ -19,6 +19,7 @@ extension Message {
 
     @NSManaged public var date: NSDate?
     @NSManaged public var text: String?
+    @NSManaged public var isSender: Bool
     @NSManaged public var friend: Friend?
 
 }
